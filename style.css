@@ -14,6 +14,11 @@ body{
 	display: inline;
 	float: left;
   }
+  
+  ul.answers{
+	list-style-type: circle;
+
+  }
 
   li a {
 	display: block;
@@ -24,8 +29,17 @@ body{
 	text-decoration: none;
   }
 
-  h1{
+  h1, h2{
 	color: aliceblue;
+  }
+
+  h1::before,
+  h1::after {
+	  display: inline-block;
+	  content: "";
+	  border-top: .3rem solid aliceblue;
+	  width: 100%;
+	  transform: translateY(-.1rem);
   }
 
   p{
