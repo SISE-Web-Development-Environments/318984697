@@ -1,7 +1,50 @@
+body{
+	text-align: center;
+	background-image: url('back.png');
+}
 #menu
 {
-	position: fixed;
-	width: 100%;
+	width: 750px;
 	height: 35px;
-	background: white;
+	margin: 0 auto;
+	background: rgb(75, 71, 71);
 }
+
+  li {
+	display: inline;
+	float: left;
+  }
+
+  li a {
+	display: block;
+	padding: 10px;
+	color: aliceblue;
+	text-align: center;
+	width: 85px;
+	text-decoration: none;
+  }
+
+  h1{
+	color: aliceblue;
+  }
+
+  p{
+	  color: aliceblue;
+	  text-align: left;
+	  margin-left: 370px;
+	  font-family: "Impact", Times, serif;
+	  font-size:20px;
+  }
+
+  img{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 300px;
+	height:300px;
+  }
+
+  iframe{
+	width: 700px;
+	height:500px;
+  }
