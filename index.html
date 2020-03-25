@@ -33,11 +33,7 @@
 <br/>
 <h1>About me</h1>
 <br/>
-<p>Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem, is an American rapper,
-  <br/>
-    songwriter, record producer, record executive and actor. In addition to his solo career, Eminem was a member of the hip hop group D12. 
-
-  <br/> 
+<p>Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem, is an American rapper, songwriter, record producer, record executive and actor. In addition to his solo career, Eminem was a member of the hip hop group D12. 
      He is also known for collaborations with fellow Detroit-based rapper Royce da 5'9"; the two are collectively known as Bad Meets Evil.
 </p>
 <br/>
@@ -49,25 +45,38 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <h1>My photos</h1>
 <br/>
-<img src="fire.jpg" >
+<!-- <img src="fire.jpg" >
 <img src="mile.jpg" >
-<img src="peace.jpg" >
-<img src="quote.jpg" >
+<img src="peace.jpg" > -->
+<div>
 
+  <div class="img-with-text">
+    <img src="quote.jpg"  alt="sometext" />
+    <p class="pImage">Dont forget</p>
+  </div>
+
+  <div class="img-with-text">
+    <img src="fire.jpg"  alt="sometext" />
+    <p class="pImage">M&M on 🔥</p>
+  </div>
+  <div class="img-with-text">
+    <img src="mile.jpg"  alt="sometext" />
+    <p class="pImage">You only have one shot</p>
+  </div>
+  <div class="img-with-text">
+    <img src="peace.jpg"  alt="sometext" />
+    <p class="pImage">Peace ✌</p>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 </section>
@@ -94,22 +103,13 @@
 <!-- <iframe 
 src="https://www.youtube.com/embed/_Yhyp-_hX2s" ></iframe> -->
 
-<iframe src="https://www.youtube.com/embed/_Yhyp-_hX2s" frameborder="0"></iframe>
-
+<!-- <iframe src="https://www.youtube.com/embed/videoseries?list=RD_Yhyp-_hX2s&index=1" frameborder="0"></iframe> -->
+<iframe width="700" height="500" src="https://www.youtube.com/embed/XbGs_qK2PQA?list=RD_Yhyp-_hX2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -136,31 +136,16 @@ src="https://www.youtube.com/embed/_Yhyp-_hX2s" ></iframe> -->
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <h1>My code</h1> 
+
 <br/>
 <br/>
+<img src="mySite.png" >
+
 <br/>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -195,6 +180,26 @@ src="https://www.youtube.com/embed/_Yhyp-_hX2s" ></iframe> -->
 <br/>
 <h1>Contact me</h1>
 <br/>
+
+<div class="container">
+  <form action="mailto:mohsenab@post.bgu.ac.il" method="GET">
+    <label for="fname">Sender Mail:</label>
+    <input type="text" id="senderMail" name="firstname" placeholder="Your name..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+     <label for="emoji">pick an emoji</label>
+     <select id="emojiSelector" >
+      <option value="like">😍</option>
+      <option value="angry">😡</option>
+      <option value="blessed">😊</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
 <br/>
 <br/>
 </section>
