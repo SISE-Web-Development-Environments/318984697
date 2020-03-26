@@ -35,7 +35,7 @@
 <br/>
 <br/>
 <br/>
-<h1>Welcome to the LEGEND site!</h1>
+<h1>Welcome to the Eminem web site!</h1>
 <br/>
 <br/>
 <IMG SRC="gif.gif">
@@ -51,10 +51,6 @@
 </section>
 
 <section id="photos" class="section"> 
-<br/>
-<br/>
-
-<br/>
 <h1>Photos</h1>
 <br/>
 <!-- <img src="fire.jpg" >
@@ -109,11 +105,8 @@
 <h1>Playlist</h1> 
 <br/>
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/xh1ROLEDyP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="500" src="https://www.youtube.com/embed/xh1ROLEDyP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <h1>Give Eminem a like!</h1> 
@@ -126,8 +119,6 @@
 
   <!-- Your like button code -->
   <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
-<br/>
-<br/>
 <br/>
 </section>
 
@@ -145,8 +136,7 @@
 
 <section id="spa" class="section">
 <br/>
-<br/>
-<br/>
+
 <br/>
 <h1>Questions & Answers</h1>
 <br/>
@@ -184,7 +174,7 @@
 
 <div class="container">
   <form encrypte="text/plain" action="mailto:mohsenab@post.bgu.ac.il" method="POST">
-    <label for="fname">Sender Mail:</label>
+    <label for="fname">Sender E-Mail:</label>
     <input type="text" id="senderMail" name="firstname" placeholder="Your name.." >
 
 
@@ -204,7 +194,7 @@
 <br/>
 <br/>
 
-<h2>Developed and designed by Mohsen Abdalla</h2>
+<p id="myname"> © Developed and designed by Mohsen Abdalla</p>
 
 </section>
 
@@ -224,11 +214,13 @@ $(function(){
 
  </script>
 
- <script>
-   $(document).ready(function(){
-      $("#subject").emojioneArea();
-   })
- </script>
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $("#subject").emojioneArea();
+    standalone: true;
+
+  });
+</script
 
 </body>
 </html>
