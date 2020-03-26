@@ -14,9 +14,7 @@
 	src: url(ToetheLineless.ttf);
  }
  
- /* * {
-	font-family: mySecondFont;
- } */
+
 body{
 	text-align: center;
 	background-image: url('back.png');
