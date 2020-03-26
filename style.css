@@ -47,12 +47,12 @@ body{
   .answer{
 	color: aliceblue;
 	display: inline-block;
-	font-family: mySecondFont;
+	font-family: pFont;
 
 }
 .answers{
 	color: aliceblue;
-	font-family: mySecondFont;
+	font-family: pFont;
 
 }
 
