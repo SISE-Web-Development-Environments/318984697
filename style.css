@@ -1,24 +1,53 @@
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(ToetheLineless.ttf);
+ }
+
+ @font-face {
+	font-family: mySecondFont;
+	src: url(StoneWalls.ttf);
+ }
+ 
+ /* * {
+	font-family: mySecondFont;
+ } */
 body{
 	text-align: center;
 	background-image: url('back.png');
+	/* font: 1em sans-serif; */
+	font-family: myFirstFont;
 }
 #menu
 {
-	width: 33%;
+	width: 40%;
 	height: 35px;
 	margin: 0 auto;
 	background: rgb(75, 71, 71);
+	margin-right: auto;    
+	margin-left: auto;  
+	min-width: 40%;
+	max-width: 40%;    
+
+
 }
 
-  li {
+  .bar{
 	display: inline;
 	float: left;
   }
-  
-  ul.answers{
-	list-style-type: circle;
 
-  }
+  .answer{
+	color: aliceblue;
+	display: inline-block;
+	font-family: mySecondFont;
+
+}
+.answers{
+	color: aliceblue;
+	font-family: mySecondFont;
+
+}
 
   li a {
 	display: block;
@@ -26,17 +55,17 @@ body{
 	margin:0;
 	color: aliceblue;
 	text-align: center;
-	width: 85px;
+	width: 100px;
 	text-decoration: none;
   }
 
-  h1{
+  h1, h2{
 	color: aliceblue;
   }
 
   #myname{
 	  color: aliceblue;
-	  font-family: "Courier New", Times, serif;
+	  /* font-family: "Courier New", Times, serif; */
 	  font-size:25px;
 	  text-align: center;
 
@@ -56,7 +85,7 @@ body{
 	  text-align: left;
 	  margin-left: 30%;
 	  margin-right: 30%;
-	  font-family: "Impact", Times, serif;
+	  /* font-family: "Impact", Times, serif; */
 	  font-size:20px;
   }
 
@@ -116,3 +145,9 @@ body{
 	margin-right: 35%;
 	height: 280px;
   }
+
+  .answerDiv{
+	  text-align: left;
+	  color: aliceblue;
+  }
+

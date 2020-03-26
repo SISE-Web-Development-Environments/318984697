@@ -19,21 +19,16 @@
 </head>
 <body>
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<li class="bar"><a href="#about">About Me</a></li>
+<li class="bar"><a href="#photos">Photos</a></li>
+<li class="bar"><a href="#playlist">Playlist</a></li>
+<li class="bar"><a href="#like">Like</a></li>
+<li class="bar"><a href="#qrcoder">QR code</a></li>
+<li class="bar"><a href="#spa">Q&A</a></li>
+<li class="bar"><a href="#contact">Contact Me</a></li>
 </div>
 		  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <h1>Welcome to the Eminem web site!</h1>
 <br/>
@@ -43,7 +38,7 @@
 <br/>
 <h1>About Eminem</h1>
 <br/>
-<p>Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem, is an American rapper, songwriter, record producer, record executive and actor. In addition to his solo career, Eminem was a member of the hip hop group D12. 
+<p class="answers">Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem, is an American rapper, songwriter, record producer, record executive and actor. In addition to his solo career, Eminem was a member of the hip hop group D12. 
      He is also known for collaborations with fellow Detroit-based rapper Royce da 5'9"; the two are collectively known as Bad Meets Evil.
 </p>
 <br/>
@@ -109,7 +104,7 @@
 <section id="like" class="section">
 <br/>
 <br/>
-<h1>Give Eminem a like!</h1> 
+<h1>Give   Eminem   a   like!</h1> 
 
 <br/>
 <br/>
@@ -118,7 +113,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 
   <!-- Your like button code -->
-  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true" ></div>
 <br/>
 </section>
 
@@ -140,34 +135,44 @@
 <br/>
 <h1>Questions & Answers</h1>
 <br/>
-<h2>3 main defrencces between web1, web2 and web3:</h2>
-<ol class="answers">
-  <li >Coffee</li>
-  <li >Tea</li>
-  <li >Milk</li>
-</ol> 
+<div class="answerDiv">
+  <h2 class="answers">3 main defrencces between web1, web2 and web3:</h2>
+  <ol class="answer">
 
-<br/>
-<br/>
-<br/>
+    <li>Number of users:</li>
+    <ul>
+      <li>in web1 there is millions of users.</li>
+      <li>in web2 there is billions of users.</li>
+      <li>in web3 there is trillions of users.</li>
+    </ul>  
+
+    <li>Publishing content online:</li>
+    <ul>
+      <li>in web1 big companies publish the content.</li>
+      <li>in web2 people publish the content that provided by big companies.</li>
+      <li>in web3 people devolved applications that other people can interact vs web1 and web2 that people can consume only.</li>
+    </ul>  
+
+    <li>User-web communication:</li>
+    <ul>
+      <li>in web1 read only.</li>
+      <li>in web2 read and write.</li>
+      <li>in web3 read, write and web portable.</li>
+    </ul>  
+  </ol> 
+
+  <h2 class="answers">Deference between web1 and web3 in the search use case “Side effects of drugs”:</h2>
+  <ul class="answers">
+    <li>in web1: user enter exact search query -> if the web page exist the page is returned to the user.</li>
+    <li>in web3: user enter the search query -> return to the user web pages that are relevant and logically related to the query inserted.</li>
+  </ul>  
+
+</div>
+
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <h1>Contact me</h1>
 <br/>
@@ -175,11 +180,11 @@
 <div class="container">
   <form encrypte="text/plain" action="mailto:mohsenab@post.bgu.ac.il" method="POST">
     <label for="fname">Sender E-Mail:</label>
-    <input type="text" id="senderMail" name="firstname" placeholder="Your name.." >
+    <input type="text" id="senderMail" name="email" placeholder="Your email.." >
 
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+    <textarea id="subject" name="subject"  ></textarea>
     
   
     <input type="submit" value="Submit">
