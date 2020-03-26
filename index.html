@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+  <!-- css emoji -->
+  <link href="emojiFiles/emojionearea.min.css" rel="stylesheet">
+  <!-- JQuer -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <!-- javaScript emoji -->
+  <script src="emojiFiles/emojionearea.min.js"></script>
+
+  
 </head>
 <body>
 <div id="menu">
@@ -169,24 +183,24 @@
 <br/>
 
 <div class="container">
-  <form action="mailto:mohsenab@post.bgu.ac.il" method="GET">
+  <form encrypte="text/plain" action="mailto:mohsenab@post.bgu.ac.il" method="POST">
     <label for="fname">Sender Mail:</label>
-    <input type="text" id="senderMail" name="firstname" placeholder="Your name..">
+    <input type="text" id="senderMail" name="firstname" placeholder="Your name.." >
 
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
     
-     <label for="emoji">pick an emoji</label>
-     <select id="emojiSelector" >
-      <option value="like">😍</option>
-      <option value="angry">😡</option>
-      <option value="blessed">😊</option>
-    </select>
-
+  
     <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
   </form>
 </div>
+
+
+
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUOkXfF-GGJNe-s96gGzi38k0pPEQz-Ud-0zlkFfylmRrmJw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">בטעינה…</iframe> -->
+
 <br/>
 <br/>
 
@@ -207,6 +221,14 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
+
  </script>
+
+ <script>
+   $(document).ready(function(){
+      $("#subject").emojioneArea();
+   })
+ </script>
+
 </body>
 </html>

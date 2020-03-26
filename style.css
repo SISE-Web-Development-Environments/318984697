@@ -73,7 +73,21 @@ body{
   /* 
  form css 
   */
+
+  
+  input[type=submit],[type=reset]{
+	background-color: rgb(107, 107, 107);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+  }
+
   input[type=text], select, textarea {
+	background-color: aliceblue(107, 107, 107);
+
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -84,18 +98,6 @@ body{
 	resize: vertical;
   }
   
-  input[type=submit] {
-	background-color: #4CAF50;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-	background-color: #45a049;
-  }
   
   .container {
 	border-radius: 5px;
@@ -103,4 +105,5 @@ body{
 	padding: 20px;
 	margin-left: 35%;
 	margin-right: 35%;
+	height: 280px;
   }
