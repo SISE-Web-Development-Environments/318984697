@@ -22,16 +22,8 @@ body{
 }
 #menu
 {
-	width: 40%;
-	height: 35px;
-	margin: 0 auto;
-	margin-right: auto;    
-	margin-left: auto;  
-	min-width: 40%;
-	max-width: 40%;    
+	/* line-height: inherit; */
 	font-family: myThirdFont;
-
-
 
 }
 
@@ -113,7 +105,7 @@ li a {
   }
 
   /* 
- form css 
+ form css taken from w3Schools
   */
 
   
@@ -139,7 +131,7 @@ li a {
 	margin-bottom: 16px;
 	resize: vertical;
   }
-  
+  /* end of form css*/
   
   .container {
 	border-radius: 5px;
